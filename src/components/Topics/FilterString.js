@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-const FilterString = () => {
-    return (
-        <div>
-            <p>Filter String</p>
-        </div>
-    )
+export default class FilterString extends Component {
+    render() {
+        return (
+            <div>
+                <p>Filter String</p>
+            </div>
+        )
+    }
 }
-
-export default FilterString
