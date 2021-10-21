@@ -22,7 +22,7 @@ export default class EvenAndOdd extends Component {
 
         const onClick = () => {
           const handleClick = (userInput) => {
-            let array = userInput.split(' ')
+            let array = userInput.split(',')
             let even = []
             let odd = []
 

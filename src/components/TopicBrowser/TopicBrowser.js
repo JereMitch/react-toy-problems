@@ -8,7 +8,6 @@ import Sum from '../Topics/Sum';
 const TopicBrowser = () => {
     return (
         <div>
-            <p>Hello World</p>
             <EvenAndOdd />
             <FilterObject />
             <FilterString />
