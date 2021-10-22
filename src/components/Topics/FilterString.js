@@ -34,14 +34,14 @@ export default class FilterString extends Component {
                 <span className="puzzleText">
                     Unfiltered Array: 
                     <br />
-                    {this.state.unFilteredArray.map((item , index) => <li>{item}</li>)}
+                    {this.state.unFilteredArray.map((item, index) => <li key={index}>{item}</li>)}
                 </span>
                 <input className="inputLine" onChange={onChange} />
                 <button className="confirmationButton" onClick={onClick} >Click Me!</button>
                 <span className="resultsBox filterStringRB">
                     Filtered Array: 
                     <br />
-                    {this.state.filteredArray.map(data => <li>{data}</li>)}
+                    {this.state.filteredArray.map((data, index) => <li key={index}>{data}</li>)}
                 </span>
             </div>
         )

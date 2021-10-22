@@ -41,8 +41,8 @@ export default class EvenAndOdd extends Component {
     return (
       <div className="puzzleBox evenAndOddPB">
         <h4>Evens and Odds</h4>
-        <input className="inputLine" onChange = {onChange} />
-        <button className="confirmationButton" onClick = {onClick}>Click Me!</button>
+        <input className="inputLine" onChange={onChange} />
+        <button className="confirmationButton" onClick={onClick}>Click Me!</button>
         <span className="resultsBox">Evens: {this.state.evenArray}</span>
         <span className="resultsBox">Odds: {this.state.oddArray}</span>
       </div>
