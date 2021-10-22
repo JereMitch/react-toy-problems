@@ -9,7 +9,8 @@ export default class Palindrome extends Component {
     };
   }
   
-    onChange = (e) => {
+  render() {
+    const onChange = (e) => {
       const handleChange = (input) => {
         this.setState({ userInput: input });
         // console.log(input)
@@ -17,7 +18,7 @@ export default class Palindrome extends Component {
       handleChange(e.target.value);
     };
 
-    onClick = () => {
+    const onClick = () => {
       let reverse = [];
       let user = this.state.userInput.replace(/\s/g, "").toLowerCase();
 
@@ -35,13 +36,13 @@ export default class Palindrome extends Component {
       }
     };
 
+
     
-    render() {
     return (
       <div className="puzzleBox filterStringPB">
         <h4>Palindrome</h4>
-        <input className="inputLine" onChange={this.onChange} />
-        <button className="confirmationButton" onClick={this.onClick}>
+        <input className="inputLine" onChange={onChange} />
+        <button className="confirmationButton" onClick={onClick}>
           Click Me!
         </button>
         <span className="resultsBox">Results: {this.state.palindrome}</span>
