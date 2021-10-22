@@ -27,17 +27,15 @@ export default class Palindrome extends Component {
         }
         reverse.push(this.state.userInput.toLowerCase().charAt(i));
       }
-      console.log(reverse)
+
       if (reverse.join("") === user) {
-        this.setState({ Results: "true" });
+        this.setState({ palindrome: "true" });
       } else {
-        this.setState({ Results: "false" });
+        this.setState({ palindrome: "false" });
       }
-      console.log(this.state.onClick)
-      console.log(this.state.userInput)
-
-
     };
+
+    
     render() {
     return (
       <div className="puzzleBox filterStringPB">
@@ -46,7 +44,7 @@ export default class Palindrome extends Component {
         <button className="confirmationButton" onClick={this.onClick}>
           Click Me!
         </button>
-        <span className="resultsBox">Results:{this.state.onClick}</span>
+        <span className="resultsBox">Results: {this.state.palindrome}</span>
       </div>
     );
   }
